@@ -1,11 +1,12 @@
 using Waves
-using Flux
+using Flux 
 using ReinforcementLearning
 using CairoMakie
 using BSON
 using Images: imresize
 include("../src/masks.jl")
 
+# We make a rectangle with this function
 function build_rectangular_grid(nx::Int, ny::Int, r::Float32)
     x = []
 
